@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Early-Stage Conservative",
+    "description": "Stage 1 patient, 60 years old, low frailty. Long window, cautious risk tolerance.",
+    "tumor_escape_h": 1440,
+    "max_risk": 0.20,
+    "human_use": true,
+    "mode": "conservative",
+    "patient_profile": { "age": 60, "stage": 1, "frailty": 0.1 }
+  },
+  {
+    "name": "Late-Stage Aggressive",
+    "description": "Stage 4 patient, 55 years old, moderate frailty. Short escape window, accept higher risk.",
+    "tumor_escape_h": 300,
+    "max_risk": 0.35,
+    "human_use": true,
+    "mode": "aggressive",
+    "patient_profile": { "age": 55, "stage": 4, "frailty": 0.3 }
+  },
+  {
+    "name": "No Human Trials",
+    "description": "Standard mid-stage case where experimental treatments are not permitted.",
+    "tumor_escape_h": 720,
+    "max_risk": 0.25,
+    "human_use": false,
+    "mode": "balanced",
+    "patient_profile": { "age": 50, "stage": 2, "frailty": 0.0 }
+  },
+  {
+    "name": "Elderly High Frailty",
+    "description": "Stage 2, age 78, high frailty. Conservative approach with tight risk budget.",
+    "tumor_escape_h": 960,
+    "max_risk": 0.18,
+    "human_use": false,
+    "mode": "conservative",
+    "patient_profile": { "age": 78, "stage": 2, "frailty": 0.6 }
+  }
+]
